@@ -136,9 +136,9 @@
                             </div>
                             <div class="m_content">
                                 <p>
-                                    웹 포트폴리오를 만들면서 어떻게 제 능력과<br>
+                                    웹 포트폴리오를 만들면서 어떻게 제 능력과
                                     프로젝트에 대한 설명을 할지 방법을 찾게 되었습니다.<br>
-                                    많은 방법들 중 팝업창을 사용하기로 결정하였고, 팝업창 중 modal팝업을 구현하기로 하였습니다. <br>
+                                    많은 방법들 중 팝업창을 사용하기로 결정하였고, 팝업창 중 modal팝업을 구현 하였습니다. <br>
                                     완성된 페이지 중앙에 팝업창을 나타내는 것에 많은 노력이 들어가게 되었습니다.<br>
                                     하나하나 열정적으로 만들어낸 개인 사이트라 많은 애정이가며<br> 
                                     뿌듯함을 느끼고 개발에 대한 애착을 늘려주는 경험이된 작업물입니다.<br>
@@ -151,6 +151,55 @@
                     </div>
                     <div class="modal_layer"></div>
                 </div>
+
+
+
+
+
+                <button type="button"  id="hangman_open_btn">
+                    <ul>
+                        <li><img src="images/icon/project_folder.png" alt="폴더 아이콘"></li>
+                        <li>Hang Man</li>
+                    </ul>
+                </button>
+                <div class="modal_area" id="hangman">
+                    <div class="modal_content">
+                        <div class="x-marker">
+                            <button type="button" id="hangman_close_btn"><img src="images/icon/x-mark-black.png"  alt="나가기"/></button>
+                        </div>
+                        <div class="board">
+                            <div class="mtitle_layout">
+                                <div class="m_marker"><h1>Yhi!:D</h1></div>
+                                <div class="m_title"><h1>Hang Man</h1><hr></div>
+                            </div>
+                            <div class="subject">
+                                <p class="language">Javascript</p>
+                                <p class="during">2020.09.19~2020.09.20</p>
+                            </div>
+                            <div class="m_content">
+                                <p>
+                                    행맨을 구현하면서 단어 리스트를 주제별로 배열을 사용하여 분류하였고, Math.random으로 배열의 인덱스를 랜덤으로 가져오도록 하였습니다.<br>
+                                    createElement와 append를 사용하여 알파벳 버튼을 생성하는 함수를 구현하였습니다.<br>
+                                    Onclick 이벤트를 통해 버튼을 눌렀을 때 주제별 게임 시작, 알파벳, 리셋, 리플레이 버튼을 구현하였습니다.<br>
+                                    innerHTML로 입력한 문자를 웹 문서에 나타냈으며, 게임의 성공/실패 함수를 구현하였습니다.<br>
+                                    .src, .style, .disabled 속성을 사용하여 css 속성을 변환하는 함수를 구현하였습니다.<br>
+                                    getElementsByClassName를 사용하면 요소들이 배열로 저장된다는 것과<br> 
+                                    많은 탐구와 실행을 통해 hasChildNodes, removeChild를 사용하여 replay 버튼 클릭 시 플레이한 게임을 초기화하는 것에 사용하였습니다.<br>
+                                    토이 프로젝트를 통해서 자바스크립트에 대한 이해도를 높이며 배열에 조금 더 익숙해지는 시간을 가지게 되었습니다.<br>
+                                </p></div>
+                            <div class="mbutton_area">
+                                <button onclick="window.open('https://github.com/dev-yihyun/Hang_Man')"><img src="images/icon/github.png" alt="github"/>깃허브 바로가기</button>
+                                <button onclick="location.href='https://dev-yihyun.github.io/Hang_Man/' "><img src="images/icon/project.png" alt="project"/>프로젝트 바로가기</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal_layer"></div>
+                </div>
+
+
+
+
+                
                     <button id="ing">
                         <ul>
                              <li><img src="images/icon/project_ing.png" alt="project"></li>

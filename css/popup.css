@@ -9,13 +9,6 @@
     z-index:2;
     display: none;
 }
-.modal_area .modal_content {
-    margin-top: -400px;
-    width:100%;
-    height: 1200px;
-    background-color: rgba(229, 235, 247,1);
-    border-radius: 50px;
-}
 .modal_area .modal_layer {
     position:fixed;
     top:0;
@@ -24,164 +17,91 @@
     height:100%;
     background:rgba(0, 0, 0, 0.5);
     z-index:-1;
-}
+} 
 @media all and (min-width:1240px){
-    .x-marker{
-        width: 92%;
-        height: 100px;
-        padding-top: 40px;
+    .modal_area .modal_content {
+        width:90%;
+        height: 1200px;
+        background-color: rgba(229, 235, 247,1);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
-    .x-marker img{
-        width: 100px;
-        height: 100px;
+    .x-marker{
+        width: 90%;
+        height: 80px;
     }
     .x-marker button{
         float: right;
-        border: 0px;
-    }
-    .board{
-        width: 90%;
-        height: 1050px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .m_title hr{
-        border: 2px solid red;
-    }
-    .mtitle_layout{
-        width: 90%;
-    }
-    .m_title{
-        width: 500px;
-        font-size: 65px;
-        text-align: center;
-        font-family: 'Caveat', cursive;
-        text-shadow: 5px 3px 10px #807f7f;
-    }
-    .m_marker{
-        width: 530px;
-        text-align: left;    
-        font-family: 'Balsamiq Sans', cursive;
-        font-size: 20px;
-    }
-    .subject{
-        width: 90%;
-        font-family: 'Lato', sans-serif;
-    }
-    .language{
-        font-size: 35px;
-    }
-    .during{
-        font-size: 20px;
-    }
-    .m_content{
-        text-align: center;
-        width: 80%;
-        height: 500px;
-        font-size: 20px;
-        line-height: 40px;
-        font-family: 'Nanum Gothic', sans-serif;
-    }
-    .mbutton_area img{
-        width: 45px;
-        height: 45px;
-        margin: 0;
-    }
-    .mbutton_area{
-        width:480px; 
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .mbutton_area button{
+        width: 80px;
         height: 100%;
-        width: 35%;
-        font-size: 15px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(235, 235, 235);
-        border-radius: 25px;
-        font-family: 'Nanum Gothic', sans-serif;
-        border: 2px solid black;
-    }
-}
-@media all and (min-width:768px) and (max-width:1239px){
-    .x-marker{
-        width: 92%;
-        height: 80px;
-        padding-top: 35px;
-    }
-    .x-marker button{
-        float: right;
         border: 0px;
     }
     .x-marker img{
-        width: 70px;
-        height: 70px;
+        width: 100%;
+        height: 100%;
     }
     .board{
-        width: 90%;
-        height: 1050px;
+        width: 95%;
+        height: 1000px;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        justify-content: space-between;
     }
     .mtitle_layout{
-        width: 90%;
+        width: 100%;
     }
     .m_marker{
-        font-size: 20px;
-        width: 500px;
-        text-align: left;    
+        width: 35%;
+        font-size: 22px;
+        text-align: left; 
         font-family: 'Balsamiq Sans', cursive;
     }
     .m_title{
-        width: 450px;
-        font-size: 55px;
-        text-align: center;
+        text-shadow: 3px 3px 5px #807f7f;
         font-family: 'Caveat', cursive;
-        text-shadow: 5px 3px 10px #807f7f;
+        font-size: 60px;
+        text-align: center;
     }
     .m_title hr{
+        width: 450px;
         border: 2px solid red;
     }
     .subject{
-        width: 90%;
+        text-align: left;
+        width: 75%;
         font-family: 'Lato', sans-serif;
     }
     .language{
-        font-size: 28px;
+        font-size: 30px;
     }
     .during{
-        font-size: 18px;
-    }
+        font-size: 20px;
+    }    
     .m_content{
-        width: 80%;
-        height:500px;
-        text-align: center;
+        width: 65%;
+        height: auto;
         font-size: 18px;
-        line-height: 30px;
+        line-height: 35px;
         font-family: 'Nanum Gothic', sans-serif;
     }
     .mbutton_area{
-        width:480px; 
-        height: 80px;
+        width: 50%;
+        height: 100px;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
     }
     .mbutton_area button{
-        height: 90%;
-        width: 35%;
-        font-size: 15px;
+        width: 200px;
+        height: 80%;
+        font-size: 18px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -192,73 +112,86 @@
         border: 2px solid black;
     }
     .mbutton_area img{
-        width: 45px;
-        height: 45px;
-        margin: 0;
-    }
-}
-@media all and (min-width: 320px) and (max-width: 767px) {
-    .x-marker{
-        width: 90%;
-        height: 50px;
-        padding-top: 20px;
-    }
-    .x-marker button{
-        float: right;
-        border: 0px;
-    }
-    .x-marker img{
         width: 50px;
         height: 50px;
+        margin: 0;
     }
-    .board{
-        width: 90%;
-        height: 1050px;
+}
+
+@media all and (min-width:768px) and (max-width:1239px){
+    .modal_area .modal_content {
+        width:100%;
+        height: 1000px;
+        background-color: rgba(229, 235, 247,1);
+        border-radius: 50px;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
     }
+    .x-marker{
+        width: 95%;
+        height: 60px;
+    }
+    .x-marker button{
+        float: right;
+        width: 60px;
+        height: 100%;
+        border: 0px;
+    }
+    .x-marker img{
+        width: 100%;
+        height: 100%;
+    }
+    .board{
+        width: 95%;
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
     .mtitle_layout{
-        width: 90%;
+        width: 100%;
     }
     .m_marker{
-        font-size: 13px;
-        width: 200px;
-        text-align: left;    
+        width: 50%;
+        font-size: 18px;
+        text-align: left; 
         font-family: 'Balsamiq Sans', cursive;
     }
     .m_title{
-        width: 180px;
-        font-size: 25px;
-        text-align: center;
-        font-family: 'Caveat', cursive;
+        width: 100%;
         text-shadow: 3px 3px 5px #807f7f;
+        font-family: 'Caveat', cursive;
+        font-size: 50px;
+        text-align: center;
     }
     .m_title hr{
+        width: 400px;
         border: 2px solid red;
     }
     .subject{
+        text-align: left;
         width: 90%;
         font-family: 'Lato', sans-serif;
     }
     .language{
-        font-size: 20px;
+        font-size: 25px;
     }
     .during{
-        font-size: 13px;
+        font-size: 18px;
     }
-    .m_content{        
+    .m_content{
         width: 85%;
-        height: 500px;
-        text-align: center;
-        font-size: 15px;
-        line-height: 20px;
+        height: auto;
+        font-size: 18px;
+        line-height: 25px;
         font-family: 'Nanum Gothic', sans-serif;
     }
     .mbutton_area{
-        width:200px; 
-        height: 200px;
+        width: 80%;
+        height: 100px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -267,8 +200,108 @@
         align-content: space-around;
     }
     .mbutton_area button{
-        height: 35%;
+        width: 200px;
+        height: 90%;
+        font-size: 18px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(235, 235, 235);
+        border-radius: 25px;
+        font-family: 'Nanum Gothic', sans-serif;
+        border: 2px solid black;
+    }
+    .mbutton_area img{
+        width: 50px;
+        height: 50px;
+        margin: 0;
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    .modal_area .modal_content {
+        width:100%;
+        height: 1000px;
+        background-color: rgba(229, 235, 247,1);
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .x-marker{
         width: 90%;
+        height: 50px;
+    }
+    .x-marker button{
+        float: right;
+        border: 0px;
+        margin: 10px;
+    }    
+    .x-marker img{
+        width: 40px;
+        height: 40px;
+    }
+    .board{
+        width: 95%;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .mtitle_layout{
+        width: 100%;
+    }
+    .m_marker{
+        width: 55%;
+        font-size: 13px;
+        text-align: left; 
+        font-family: 'Balsamiq Sans', cursive;
+    }
+    .m_title{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Caveat', cursive;
+        text-shadow: 3px 3px 5px #807f7f;
+    }
+    .m_title hr{
+        width: 230px;
+        border: 2px solid red;
+    }
+    .subject{
+        text-align: left;
+        width: 90%;
+        font-family: 'Lato', sans-serif;
+    }
+    .language{
+        font-size: 20px;
+    }
+    .during{
+        font-size: 13px;
+    }
+    .m_content{
+        width: 80%;
+        height: auto;
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    .mbutton_area{
+        width:80%; 
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+    .mbutton_area button{
+        width: 200px;
+        height: 45%;
         font-size: 15px;
         text-align: center;
         display: flex;
