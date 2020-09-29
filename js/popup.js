@@ -11,6 +11,19 @@ document.getElementById("hangman_close_btn").onclick = function() {
     document.getElementById("hangman").style.display="none";
 }   
 
+
+
+document.getElementById("baseball_open_btn").onclick = function() {
+    document.getElementById("baseball").style.display="block";
+}
+document.getElementById("baseball_close_btn").onclick = function() {
+    document.getElementById("baseball").style.display="none";
+}   
+
+
+
+
+
 document.getElementById("ing").onclick=function(){
     alert('준비중인 프로젝트 입니다.');
 }
